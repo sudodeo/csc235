@@ -2,7 +2,8 @@
 
 void reverse_sentence(char *sentence);
 
-int main() {
+int main()
+{
     char sentence[100];
 
     printf("Enter a sentence: ");
@@ -13,10 +14,12 @@ int main() {
 
     return 0;
 }
-
-void reverse_sentence(char *sentence) {
-    if (*sentence != '\0') {
+// using recursion to reverse string
+void reverse_sentence(char *sentence)
+{
+    if (*sentence != '\0')
+    {
         reverse_sentence(sentence + 1);
-        printf("%c", *sentence);   
+        printf("%c", *sentence);
     }
 }
