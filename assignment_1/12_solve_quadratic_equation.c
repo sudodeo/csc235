@@ -1,11 +1,10 @@
 #include <stdio.h>
-// #include <complex.h>
 #include <math.h>
 
 int main()
 {
-    // x^2 + x + constant = 0
-    double a, b, c, discriminant;
+    // a^2 + b + c = 0
+    double a, b, c, discriminant, root1, root2;
     printf("ax^2 + bx + c = 0\n");
     printf("Input value for a: ");
     scanf("%lf", &a);
@@ -17,15 +16,15 @@ int main()
 
     if (discriminant > 0)
     {
-        double root1 = (-b + sqrt(discriminant)) / (2 * a);
-        double root2 = (-b - sqrt(discriminant)) / (2 * a);
+        root1 = (-b + sqrt(discriminant)) / (2 * a);
+        root2 = (-b - sqrt(discriminant)) / (2 * a);
         printf("Roots are real and different.\n");
         printf("Root 1: %lf\n", root1);
         printf("Root 2: %lf\n", root2);
     }
     else if (discriminant == 0)
     {
-        double root1 = -b / (2 * a);
+        root1 = -b / (2 * a);
         printf("Roots are real and same.\n");
         printf("Root 1: %lf\n", root1);
     }
