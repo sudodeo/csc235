@@ -6,14 +6,14 @@ int main()
 {
     FILE *file = fopen("files.in", "r");
 
-    if (fp == NULL)
+    if (file == NULL)
     {
         printf("Error opening file\n");
         return 1;
     }
 
     int numberOfTestCases;
-    fscanf(fp, "%d", &numberOfTestCases);
+    fscanf(file, "%d", &numberOfTestCases);
 
     char line[16];
 
